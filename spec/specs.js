@@ -6,12 +6,11 @@ describe("PizzaMaker", function(){
 			expect(testPizzaMaker.price).to.equal(8);
 		});
 	});
+	describe("type", function(){
+		it("returns type of Pizza", function(){
+			var testPizzaMaker = Object.create(PizzaMaker);
+			testPizzaMaker.type("pepperoni");
+			expect(testPizzaMaker.price).to.equal(7);
+		});
+	});
 });
-	
-// 	describe("slices",function(){
-// 		it("returns number of slices based on diameter and slices", function(){
-// 			var testPizzaMaker = Object.create(PizzaMaker);
-			
-// 		})
-// 	})
-// })
