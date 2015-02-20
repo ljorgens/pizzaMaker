@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Get Your Slices Here!</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css" type = "text/css">
 		<script src="js/jquery-1.11.2.js"></script>
 		<script src="js/scripts.js"></script>
@@ -10,15 +11,25 @@
 		<div id = "container">
 			<h1>Pick Your Pizza!</h1>
 			<form id = "pizzaType">
+				<div class = "col-md-3">
 				<h2>Size!</h2>
-				<input type="radio" name = "size" value = "6" checked>  <h4> $5 Personal Pizza (6") </h4>
-				<input type="radio" name = "size" value = "10"> <h4> $8 Small Pizza (10") </h4>
-				<input type="radio" name = "size" value = "14"> <h4> $12 Medium Pizza (14") </h4>
-				<input type="radio" name = "size" value = "20"> <h4> $14 Large Pizza (20") </h4>				
+				<input type="radio" id = "personal" name = "size" value = "6" checked><label for="personal"><h4>$5 Personal Pizza (6")</h4></label>
+				<br>
+				<input type="radio" name = "size" id = "small" value = "10"><label for="small"><h4>$8 Small Pizza (10")</h4></label>
+				<br>
+				<input type="radio" name = "size" id = "medium" value = "14"><label for="medium"><h4>$12 Medium Pizza (14")</h4></label>
+				<br>
+				<input type="radio" name = "size" id= "large" value = "20"><label for="Large"><h4>$14 Large Pizza (20")</h4></label>
+				</div>
+				<div class = "col-md-3">
 				<h3>Toppings!</h3>
-				<input type="radio" name = "toppings" value = "cheese" checked> <h4> +$5 Cheese </h4>
-				<input type="radio" name = "toppings" value = "pepperoni"> <h4> +$7 Pepperoni </h4>
+				<input type="radio" id = "cheese" name = "toppings" value = "cheese" checked><label for="cheese"><h4>+$5 Cheese</h4></label>
+				<br>
+				<input type="radio" id = "pepperoni" name = "toppings" value = "pepperoni"><label for="pepperoni"><h4>+$7 Pepperoni</h4></label>
+				<div class = "row">
 				<button type = "submit"> Make me a Pizza!</button>
+				</div>
+				</div>
 			</form>
 			
 			<div class = "pizzaPrice">
